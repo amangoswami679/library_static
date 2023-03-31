@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./scripts.js" defer></script>
+    <title>Library</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>The Library</h1>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read?</th>
+          </tr>
+        </thead>
+        <tbody id="table">
+        </tbody>
+      </table>
+      <form name="signup"> 
+        <fieldset>
+          <legend>Add a Book</legend>
+          <label for="title"
+            >Title
+            <input type="text" name="title" id="title" required />
+          </label>
+
+          <label for="author"
+            >Author
+            <input type="text" name="author" id="author" required />
+          </label>
+
+          <label for="pages"
+            >Pages
+            <input type="number" name="pages" id="pages" required />
+          </label>
+
+          Read?
+          <br />
+          <label for="yes"
+            >Yes
+            <input type="radio" name="hasRead" required id="yes" value="Yes" />
+          </label>
+
+          <label for="no"
+            >No
+            <input type="radio" name="hasRead" id="no" value="No" />
+          </label>
+          <br>
+          <input type="submit" value="Add">
+        </fieldset>
+        
+      </form>
+    </main>
+    <footer>
+      Made under The Odin Project
+    </footer>
+  </body>
+</html>
